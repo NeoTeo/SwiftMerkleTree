@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB22041A1B97017E00798837 /* MerkleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2204191B97017E00798837 /* MerkleTest.swift */; };
+		AB2204241B97300600798837 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC3EB31B90B980005B7A81 /* main.swift */; };
+		AB2204251B99D3D100798837 /* MerkleTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB205841B9481B20051A451 /* MerkleTree.swift */; };
+		AB2204271B99D56E00798837 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2204261B99D56E00798837 /* String+Crypto.swift */; settings = {ASSET_TAGS = (); }; };
+		AB2204281B99D56E00798837 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2204261B99D56E00798837 /* String+Crypto.swift */; settings = {ASSET_TAGS = (); }; };
 		ABAC3EB41B90B980005B7A81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC3EB31B90B980005B7A81 /* main.swift */; };
+		ABB205851B9481B20051A451 /* MerkleTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB205841B9481B20051A451 /* MerkleTree.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +29,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB2204171B97017D00798837 /* MerkleTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerkleTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2204191B97017E00798837 /* MerkleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerkleTest.swift; sourceTree = "<group>"; };
+		AB22041B1B97017E00798837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2204261B99D56E00798837 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		ABAC3EB01B90B980005B7A81 /* Merkle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Merkle; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC3EB31B90B980005B7A81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ABB205841B9481B20051A451 /* MerkleTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerkleTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AB2204141B97017D00798837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABAC3EAD1B90B980005B7A81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB2204181B97017E00798837 /* MerkleTest */ = {
+			isa = PBXGroup;
+			children = (
+				AB2204191B97017E00798837 /* MerkleTest.swift */,
+				AB22041B1B97017E00798837 /* Info.plist */,
+			);
+			path = MerkleTest;
+			sourceTree = "<group>";
+		};
 		ABAC3EA71B90B980005B7A81 = {
 			isa = PBXGroup;
 			children = (
 				ABAC3EB21B90B980005B7A81 /* Merkle */,
+				AB2204181B97017E00798837 /* MerkleTest */,
 				ABAC3EB11B90B980005B7A81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAC3EB01B90B980005B7A81 /* Merkle */,
+				AB2204171B97017D00798837 /* MerkleTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				ABAC3EB31B90B980005B7A81 /* main.swift */,
+				AB2204261B99D56E00798837 /* String+Crypto.swift */,
+				ABB205841B9481B20051A451 /* MerkleTree.swift */,
 			);
 			path = Merkle;
 			sourceTree = "<group>";
@@ -65,6 +96,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AB2204161B97017D00798837 /* MerkleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB22041E1B97017E00798837 /* Build configuration list for PBXNativeTarget "MerkleTest" */;
+			buildPhases = (
+				AB2204131B97017D00798837 /* Sources */,
+				AB2204141B97017D00798837 /* Frameworks */,
+				AB2204151B97017D00798837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MerkleTest;
+			productName = MerkleTest;
+			productReference = AB2204171B97017D00798837 /* MerkleTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ABAC3EAF1B90B980005B7A81 /* Merkle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABAC3EB71B90B980005B7A81 /* Build configuration list for PBXNativeTarget "Merkle" */;
@@ -91,6 +139,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Teo Sartori";
 				TargetAttributes = {
+					AB2204161B97017D00798837 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					ABAC3EAF1B90B980005B7A81 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -109,22 +160,68 @@
 			projectRoot = "";
 			targets = (
 				ABAC3EAF1B90B980005B7A81 /* Merkle */,
+				AB2204161B97017D00798837 /* MerkleTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AB2204151B97017D00798837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AB2204131B97017D00798837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2204251B99D3D100798837 /* MerkleTree.swift in Sources */,
+				AB2204281B99D56E00798837 /* String+Crypto.swift in Sources */,
+				AB2204241B97300600798837 /* main.swift in Sources */,
+				AB22041A1B97017E00798837 /* MerkleTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABAC3EAC1B90B980005B7A81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2204271B99D56E00798837 /* String+Crypto.swift in Sources */,
 				ABAC3EB41B90B980005B7A81 /* main.swift in Sources */,
+				ABB205851B9481B20051A451 /* MerkleTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		AB22041C1B97017E00798837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MerkleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Terminal-Glow.MerkleTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB22041D1B97017E00798837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MerkleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Terminal-Glow.MerkleTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		ABAC3EB51B90B980005B7A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -222,6 +319,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AB22041E1B97017E00798837 /* Build configuration list for PBXNativeTarget "MerkleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB22041C1B97017E00798837 /* Debug */,
+				AB22041D1B97017E00798837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ABAC3EAB1B90B980005B7A81 /* Build configuration list for PBXProject "Merkle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
