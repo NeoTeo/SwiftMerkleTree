@@ -13,7 +13,7 @@ import Foundation
 2) In the CommonCrypto directory create a module.map file with the contents:
 
 module CommonCrypto [system] {
-header "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/CommonCrypto/CommonCrypto.h"
+header "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/CommonCrypto/CommonCrypto.h"
 export *
 }
 
