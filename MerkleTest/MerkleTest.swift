@@ -41,12 +41,12 @@ class MerkleTest: XCTestCase {
         // Karin is 006952514fe555f137977959868b97fd530ec3a825015e54da95675ac040ca17
         
         // Of the concatenated hashes of Teo and Linda is e1f396ef4c0d93f21bdeb04aca3b1613371763cb2c94651fa431a88e346152ba
-        // Of the Karin's hash is 0c4140e594c067e72b2e597575501feb7a6393ad738041256c24f24662eb9c50
-        // Of the concatenated hashes of (Teo and Linda) and (Karin's hash) is ca8a2321da39aed84ed5192f43d1bc312768cb05a7745b4bb3d3d50b9293dc56
+        // Of the concatenated hashes of Karin and Karin is bcead33fe4a34d06f6cd28d7515a7210c8df5b4a93663dc28c9fe45e031d77c7
+        // Of the concatenated hashes of (Teo and Linda) and (Karin and Karin) is 7f641bd423cb05e39ff5f42084dc30dd2947678dbf526bfa22184b17d373cb71
         let tree = MerkleTree.buildTree(fromBlobs: blobs)
         switch tree {
         case let .Node(root_hash,_,_,_):
-            XCTAssert(root_hash == "ca8a2321da39aed84ed5192f43d1bc312768cb05a7745b4bb3d3d50b9293dc56")
+            XCTAssert(root_hash == "7f641bd423cb05e39ff5f42084dc30dd2947678dbf526bfa22184b17d373cb71")
         case .Empty:
             XCTFail()
             break

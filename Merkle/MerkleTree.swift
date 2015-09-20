@@ -85,7 +85,9 @@ extension MerkleTree {
             while nodeArray.count > 0 {
                 
                 let leftNode  = nodeArray.removeFirst()
-                let rightNode = nodeArray.count > 0 ? nodeArray.removeFirst() : .Empty
+                /** Ensure we have a balanced binary tree by duplicating the left
+                    node in the case there is no right node. */
+                let rightNode = nodeArray.count > 0 ? nodeArray.removeFirst() : leftNode
                 
                 tmpArray.append(createParentNode(leftNode, rightChild: rightNode))
             }
